@@ -1,4 +1,13 @@
-# Nuxt Minimal Starter
+Commands I used:
+1. npx nuxi init my-portfolio
+2. cd my-portfolio
+3. yarn add -D tailwindcss@3 postcss autoprefixer
+4. npx tailwindcss init -p
+
+To run use:
+yarn dev
+
+# Nuxt Setup
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
