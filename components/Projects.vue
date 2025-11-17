@@ -2,7 +2,7 @@
   <section id="projects" class="py-8 bg-slate-800">
     <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-2xl font-bold text-slate-100">Projects</h2>
-      <p class="mt-1 text-slate-300">A selection of projects — click any card to open the repository.</p>
+      <p class="mt-1 text-slate-300">A selection of projects — click any card to open the git repository of my projects.</p>
 
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <a v-for="(p, i) in projects" :key="i" :href="p.link" target="_blank" rel="noopener" class="group block p-4 rounded-2xl border border-slate-700 bg-slate-900 shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
@@ -31,10 +31,10 @@
 
 <script setup>
 const projects = [
-  { title: 'Project One', description: 'Short description about project one. I will replace these details later.', tech: ['Vue', 'Tailwind'], year: '2025', link: '#' },
-  { title: 'Project Two', description: 'Short description about project two.', tech: ['Nuxt', 'TypeScript'], year: '2024', link: '#' },
-  { title: 'Project Three', description: 'Short description about project three.', tech: ['Node', 'Postgres'], year: '2023', link: '#' },
-  { title: 'Project Four', description: 'Short description about project four.', tech: ['React', 'GraphQL'], year: '2025', link: '#' },
+  { title: 'MGNREGA-backend', description: 'Fetches data about a district from data.gov.in official site and saves to NeonDB database. Acts as backend to MGNREGA-frontennd and provides it with data for visualization.', tech: ['Python','FastAPI','NeonDB','Redis'], year: '2025', link: 'https://github.com/PreVya/MGNREGA-backend' },
+  { title: 'MGNREGA-frontend', description: 'District wise data visualization. Fetches this data from the MGNREGA-backend.', tech: ['Python', 'Streamlit'], year: '2025', link: 'https://github.com/PreVya/MGNREGA-frontend' },
+  { title: 'terraform-files', description: 'Different brances of this repo contains 3 different infrastructure for deployment of 2 simple apps. Deployment infrastucture involve deploying on same EC2 instance of AWS, two different EC2 instance and lastly deploying apps with 2 task definitions in a ECS cluster.', tech: ['Terraform'], year: '2025', link: 'https://github.com/PreVya/terraform-files/tree/main' },
+  { title: 'MicroORM-book-author', description: 'Simple book-author backend app made using NestJS. Application of CRUD, authentication, RoleAuth and redis caching.', tech: ['TypeScript','NestJS'], year: '2024', link: 'https://github.com/PreVya/mikroORM-book-author' },
   { title: 'Project Five', description: 'Short description about project five.', tech: ['Python', 'Flask'], year: '2024', link: '#' },
   { title: 'Project Six', description: 'Short description about project six.', tech: ['Go', 'Docker'], year: '2023', link: '#' }
 ]

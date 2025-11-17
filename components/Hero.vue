@@ -11,11 +11,11 @@
             <a href="#contact" class="inline-block text-indigo-300 px-4 py-2 rounded-lg border border-indigo-800 hover:bg-indigo-900 transition">Get in touch</a>
           </div>
 
-          <div class="mt-4 flex flex-wrap gap-2">
+          <!-- <div class="mt-4 flex flex-wrap gap-2">
             <span class="text-xs px-2 py-1 bg-slate-700 rounded text-slate-200">APIs</span>
             <span class="text-xs px-2 py-1 bg-slate-700 rounded text-slate-200">IaC</span>
             <span class="text-xs px-2 py-1 bg-slate-700 rounded text-slate-200">CI/CD</span>
-          </div>
+          </div> -->
         </div>
 
         <div class="flex flex-col items-center md:items-end">
@@ -41,13 +41,14 @@
             </div>
 
             <pre class="whitespace-pre-wrap"><code class="block">$ sudo pacman -Syu
-$ sudo pacman -S docker kubectl kubens 
-$ sudo systemctl enable --now docker
+$ sudo pacman -S docker minikube kubectl kubens 
+$ sudo systemctl enable docker
+$ sudo minikube start --nodes=2 --driver=docker
 </code></pre>
 
-            <div class="mt-3 flex justify-end">
+            <!-- <div class="mt-3 flex justify-end">
               <button class="text-xs bg-indigo-600 px-2 py-1 rounded hover:bg-indigo-500">Copy snippet</button>
-            </div>
+            </div> -->
           </div>
 
           <div class="mt-4 flex gap-2 text-xs">
